@@ -1,4 +1,4 @@
-# Contact Manager Frontend
+# Contact Manager
 
 # Getting Started with Create React App
 
