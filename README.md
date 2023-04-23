@@ -13,3 +13,6 @@ In the project directory, you can run:
     
 2. Render List in React
 3. Props - Pass data from parent to Child
+4. Add Inline Style
+5. Add Images
+6. UseState React Hooks

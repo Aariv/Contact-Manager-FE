@@ -1,25 +1,47 @@
 import React from 'react';
 
-const AddContact = () =>  {
-    return (
-        <div className='ui main'>
-            <h2>Add Contact</h2>
-            <form className='ui form'>
-                <div className='field'>
-                    <label>Name</label>
-                    <input type='text' placeholder='Name'></input>
-                    
-                </div>
-                <div className='field'>
-                    <label>Email</label>
-                    <input type='email' placeholder='Email'></input>
-                    
-                </div>
+class AddContact extends React.Component  {
+    state = {
+        name: "",
+        email: ""
+    };
 
-                <button className='ui button blue'>Add</button>
-            </form>
-        </div>
-    );
+    add = (e) => {
+        e.preventDefault();
+        if(this.state.name === "" && this.state.email === "") {
+            alert("All the fields are mandatory");
+        }
+        console.log(this.state);
+    }
+
+    render() {
+        return (
+            <div className='ui main'>
+                <h2>Add Contact</h2>
+                <form className='ui form' onSubmit={this.add}>
+                    <div className='field'>
+                        <label>Name</label>
+                        <input 
+                            type='text' 
+                            placeholder='Name' 
+                            onChange={(e) => this.setState({name: e.target.value})} 
+                        />
+                    </div>
+                    <div className='field'>
+                        <label>Email</label>
+                        <input 
+                            type='email' 
+                            placeholder='Email'
+                            onChange={(e) => this.setState({email: e.target.value})}
+                        />
+                        
+                    </div>
+
+                    <button className='ui button blue'>Add</button>
+                </form>
+            </div>
+        );
+    }
 }
 
 export default AddContact;
