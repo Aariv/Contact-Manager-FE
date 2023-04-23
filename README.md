@@ -1,4 +1,4 @@
-# Contact Manager Frontend
+# Contact Manager
 
 ## Available Scripts
 
