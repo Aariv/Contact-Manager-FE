@@ -5,7 +5,7 @@ import Header from './Header';
 import AddContact from './AddContact';
 import ContactList from './ContactList';
 
-function App() {
+function Application() {
   const LOCAL_STORAGE_KEY = "contacts";
   // const [contacts, setContacts] = useState([]);
 
@@ -46,4 +46,4 @@ function App() {
   );
 }
 
-export default App;
+export default Application;
