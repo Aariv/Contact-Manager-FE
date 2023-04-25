@@ -15,4 +15,8 @@ In the project directory, you can run:
 3. Props - Pass data from parent to Child
 4. Add Inline Style
 5. Add Images
-6. UseState React Hooks
+6. UseState React Hook
+7. UseEffect React Hook
+8. Added UUID
+9. Implemented Delete Functioanlity
+10. Used LocalStorage to maintain contact details 
