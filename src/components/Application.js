@@ -46,8 +46,6 @@ function Application() {
           <Route path='/' exact element={() => <ContactList contacts={contacts} getContactId={removeContactHandler} />} />
           <Route path='/add' exact component={() => <AddContact addContactHandler={addContactHandler}/>} />
         </Routes>
-        {/* <AddContact addContactHandler={addContactHandler}/> */}
-        {/* <ContactList contacts={contacts} getContactId={removeContactHandler}/> */}
       </Router>
       
     </div>
