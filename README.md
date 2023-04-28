@@ -20,3 +20,6 @@ In the project directory, you can run:
 8. Added UUID
 9. Implemented Delete Functioanlity
 10. Used LocalStorage to maintain contact details 
+11. Routes 
+12. Switch Cases
+
