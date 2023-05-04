@@ -43,8 +43,8 @@ function Application() {
       <Router>
         <Header />
         <Routes>
-          <Route path='/' exact element={() => <ContactList contacts={contacts} getContactId={removeContactHandler} />} />
-          <Route path='/add' exact element={() => <AddContact addContactHandler={addContactHandler}/>} />
+          <Route path='/' exact Component={() => <ContactList contacts={contacts} getContactId={removeContactHandler} />} />
+          <Route path='/add' exact Component={() => <AddContact addContactHandler={addContactHandler}/>} />
         </Routes>
       </Router>
       
