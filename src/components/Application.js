@@ -42,6 +42,7 @@ function Application() {
     <div className='ui container'>
       <Router>
         <Header />
+        {/* Routes configuration  */}
         <Routes>
           <Route path='/' exact Component={() => <ContactList contacts={contacts} getContactId={removeContactHandler} />} />
           <Route path='/add' exact Component={() => <AddContact addContactHandler={addContactHandler}/>} />
